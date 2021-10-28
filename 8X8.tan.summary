@@ -1,0 +1,56 @@
+--------------------------------------------------------------------------------------
+Timing Analyzer Summary
+--------------------------------------------------------------------------------------
+
+Type           : Worst-case tsu
+Slack          : N/A
+Required Time  : None
+Actual Time    : 20.000 ns
+From           : No
+To             : monster1:inst|col_Red[5]
+From Clock     : --
+To Clock       : CLOCK
+Failed Paths   : 0
+
+Type           : Worst-case tco
+Slack          : N/A
+Required Time  : None
+Actual Time    : 37.600 ns
+From           : scorecount:inst5|present_state[0]
+To             : Y[1]
+From Clock     : CLOCK
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Worst-case th
+Slack          : N/A
+Required Time  : None
+Actual Time    : 14.300 ns
+From           : pin_name
+To             : debounce_g:inst7|1
+From Clock     : --
+To Clock       : CLOCK
+Failed Paths   : 0
+
+Type           : Clock Setup: 'CLOCK'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 26.81 MHz ( period = 37.300 ns )
+From           : loopcountingg:inst2|present_state[0]
+To             : monster1:inst|col_Green[3]
+From Clock     : CLOCK
+To Clock       : CLOCK
+Failed Paths   : 0
+
+Type           : Total number of failed paths
+Slack          : 
+Required Time  : 
+Actual Time    : 
+From           : 
+To             : 
+From Clock     : 
+To Clock       : 
+Failed Paths   : 0
+
+--------------------------------------------------------------------------------------
+

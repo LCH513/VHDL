@@ -1,0 +1,709 @@
+|8X8
+ledr <= DFFDFFDFFDFF:inst9.Q1
+Ball => inst12.IN0
+Ball => inst13.IN0
+Ball => inst11.IN0
+Ball => monster1:inst.b
+Yes => inst12.IN1
+Yes => inst13.IN1
+Yes => inst11.IN1
+Yes => monster1:inst.y
+Monster2 => inst12.IN2
+Monster2 => monster1:inst.m2
+Monster1 => inst13.IN2
+Monster1 => monster1:inst.m1
+Monster3 => inst11.IN2
+Monster3 => monster1:inst.m3
+CLOCK => DFFDFFDFFDFF:inst9.clk
+CLOCK => scanf_gen:inst1.clockin
+CLOCK => clk_gen:inst3.clock
+ledy <= DFFDFFDFFDFF:inst9.Q2
+ledg <= DFFDFFDFFDFF:inst9.Q3
+vcc <= DFFDFFDFFDFF:inst9.pin_name
+bee <= DFFDFFDFFDFF:inst9.bee
+COL[7] <= monster1:inst.col_Red[7]
+COL[6] <= monster1:inst.col_Red[6]
+COL[5] <= monster1:inst.col_Red[5]
+COL[4] <= monster1:inst.col_Red[4]
+COL[3] <= monster1:inst.col_Red[3]
+COL[2] <= monster1:inst.col_Red[2]
+COL[1] <= monster1:inst.col_Red[1]
+COL[0] <= monster1:inst.col_Red[0]
+No => monster1:inst.n
+clear => monster1:inst.clear
+COL_S[7] <= monster1:inst.col_Green[7]
+COL_S[6] <= monster1:inst.col_Green[6]
+COL_S[5] <= monster1:inst.col_Green[5]
+COL_S[4] <= monster1:inst.col_Green[4]
+COL_S[3] <= monster1:inst.col_Green[3]
+COL_S[2] <= monster1:inst.col_Green[2]
+COL_S[1] <= monster1:inst.col_Green[1]
+COL_S[0] <= monster1:inst.col_Green[0]
+ROW[7] <= monster1:inst.row_Red[7]
+ROW[6] <= monster1:inst.row_Red[6]
+ROW[5] <= monster1:inst.row_Red[5]
+ROW[4] <= monster1:inst.row_Red[4]
+ROW[3] <= monster1:inst.row_Red[3]
+ROW[2] <= monster1:inst.row_Red[2]
+ROW[1] <= monster1:inst.row_Red[1]
+ROW[0] <= monster1:inst.row_Red[0]
+ROW_S[7] <= monster1:inst.row_Green[7]
+ROW_S[6] <= monster1:inst.row_Green[6]
+ROW_S[5] <= monster1:inst.row_Green[5]
+ROW_S[4] <= monster1:inst.row_Green[4]
+ROW_S[3] <= monster1:inst.row_Green[3]
+ROW_S[2] <= monster1:inst.row_Green[2]
+ROW_S[1] <= monster1:inst.row_Green[1]
+ROW_S[0] <= monster1:inst.row_Green[0]
+Y[0] <= VHDL09:inst8.Y[0]
+Y[1] <= VHDL09:inst8.Y[1]
+Y[2] <= VHDL09:inst8.Y[2]
+Y[3] <= VHDL09:inst8.Y[3]
+Y[4] <= VHDL09:inst8.Y[4]
+Y[5] <= VHDL09:inst8.Y[5]
+Y[6] <= VHDL09:inst8.Y[6]
+pin_name => debounce_g:inst7.Key_in
+
+
+|8X8|DFFDFFDFFDFF:inst9
+Q1 <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+clk => clk_gen:inst10.clock
+D => debounce_g:inst12.Key_in
+Q2 <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+Q3 <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+pin_name <= <VCC>
+bee <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|8X8|DFFDFFDFFDFF:inst9|clk_gen:inst10
+1KHz <= div10_t:inst3.CLK_out
+clock => div10_t:inst.CLK
+100Hz <= div10_t:inst4.CLK_out
+10Hz <= div10_t:inst5.CLK_out
+1Hz <= div10_t:inst6.CLK_out
+
+
+|8X8|DFFDFFDFFDFF:inst9|clk_gen:inst10|div10_t:inst3
+CLK_out <= 2.DB_MAX_OUTPUT_PORT_TYPE
+CLK => 5.CLK
+CLK => 3.CLK
+CLK => 1.CLK
+CLK => 2.CLK
+
+
+|8X8|DFFDFFDFFDFF:inst9|clk_gen:inst10|div10_t:inst2
+CLK_out <= 2.DB_MAX_OUTPUT_PORT_TYPE
+CLK => 5.CLK
+CLK => 3.CLK
+CLK => 1.CLK
+CLK => 2.CLK
+
+
+|8X8|DFFDFFDFFDFF:inst9|clk_gen:inst10|div10_t:inst1
+CLK_out <= 2.DB_MAX_OUTPUT_PORT_TYPE
+CLK => 5.CLK
+CLK => 3.CLK
+CLK => 1.CLK
+CLK => 2.CLK
+
+
+|8X8|DFFDFFDFFDFF:inst9|clk_gen:inst10|div10_t:inst
+CLK_out <= 2.DB_MAX_OUTPUT_PORT_TYPE
+CLK => 5.CLK
+CLK => 3.CLK
+CLK => 1.CLK
+CLK => 2.CLK
+
+
+|8X8|DFFDFFDFFDFF:inst9|clk_gen:inst10|div10_t:inst4
+CLK_out <= 2.DB_MAX_OUTPUT_PORT_TYPE
+CLK => 5.CLK
+CLK => 3.CLK
+CLK => 1.CLK
+CLK => 2.CLK
+
+
+|8X8|DFFDFFDFFDFF:inst9|clk_gen:inst10|div10_t:inst5
+CLK_out <= 2.DB_MAX_OUTPUT_PORT_TYPE
+CLK => 5.CLK
+CLK => 3.CLK
+CLK => 1.CLK
+CLK => 2.CLK
+
+
+|8X8|DFFDFFDFFDFF:inst9|clk_gen:inst10|div10_t:inst6
+CLK_out <= 2.DB_MAX_OUTPUT_PORT_TYPE
+CLK => 5.CLK
+CLK => 3.CLK
+CLK => 1.CLK
+CLK => 2.CLK
+
+
+|8X8|DFFDFFDFFDFF:inst9|debounce_g:inst12
+Key_out <= 16.DB_MAX_OUTPUT_PORT_TYPE
+CLK => 1.CLK
+CLK => 2.CLK
+Key_in => 1.DATAIN
+
+
+|8X8|monster1:inst
+CLK => col_Red[0]~reg0.CLK
+CLK => col_Red[1]~reg0.CLK
+CLK => col_Red[2]~reg0.CLK
+CLK => col_Red[3]~reg0.CLK
+CLK => col_Red[4]~reg0.CLK
+CLK => col_Red[5]~reg0.CLK
+CLK => col_Red[6]~reg0.CLK
+CLK => col_Red[7]~reg0.CLK
+CLK => col_Green[0]~reg0.CLK
+CLK => col_Green[1]~reg0.CLK
+CLK => col_Green[2]~reg0.CLK
+CLK => col_Green[3]~reg0.CLK
+CLK => col_Green[4]~reg0.CLK
+CLK => col_Green[5]~reg0.CLK
+CLK => col_Green[6]~reg0.CLK
+CLK => col_Green[7]~reg0.CLK
+CLK => row_Green[0]~reg0.CLK
+CLK => row_Green[1]~reg0.CLK
+CLK => row_Green[2]~reg0.CLK
+CLK => row_Green[3]~reg0.CLK
+CLK => row_Green[4]~reg0.CLK
+CLK => row_Green[5]~reg0.CLK
+CLK => row_Green[6]~reg0.CLK
+CLK => row_Green[7]~reg0.CLK
+CLK => cnt1[2].CLK
+CLK => cnt1[1].CLK
+CLK => cnt1[0].CLK
+CLK => cnt2[2].CLK
+CLK => cnt2[1].CLK
+CLK => cnt2[0].CLK
+CLK => cnt3[2].CLK
+CLK => cnt3[1].CLK
+CLK => cnt3[0].CLK
+CLK => cnt4[2].CLK
+CLK => cnt4[1].CLK
+CLK => cnt4[0].CLK
+n => row_Green~158.OUTPUTSELECT
+n => row_Green~148.OUTPUTSELECT
+n => row_Green~138.OUTPUTSELECT
+n => row_Green~128.OUTPUTSELECT
+n => row_Green~118.OUTPUTSELECT
+n => row_Green~108.OUTPUTSELECT
+n => row_Green~98.OUTPUTSELECT
+n => row_Green~88.OUTPUTSELECT
+n => col_Green~285.OUTPUTSELECT
+n => col_Green~274.OUTPUTSELECT
+n => col_Green~263.OUTPUTSELECT
+n => col_Green~252.OUTPUTSELECT
+n => col_Green~241.OUTPUTSELECT
+n => col_Green~230.OUTPUTSELECT
+n => col_Green~219.OUTPUTSELECT
+n => col_Green~208.OUTPUTSELECT
+n => col_Red~283.OUTPUTSELECT
+n => col_Red~272.OUTPUTSELECT
+n => col_Red~265.OUTPUTSELECT
+n => col_Red~256.OUTPUTSELECT
+n => col_Red~249.OUTPUTSELECT
+n => col_Red~240.OUTPUTSELECT
+n => col_Red~233.OUTPUTSELECT
+n => col_Red~225.OUTPUTSELECT
+n => col_Red~0.OUTPUTSELECT
+n => col_Red~23.OUTPUTSELECT
+n => col_Red~66.OUTPUTSELECT
+n => col_Red~218.OUTPUTSELECT
+n => row_Green~7.OUTPUTSELECT
+n => row_Green~6.OUTPUTSELECT
+n => row_Green~5.OUTPUTSELECT
+n => row_Green~4.OUTPUTSELECT
+n => row_Green~3.OUTPUTSELECT
+n => row_Green~2.OUTPUTSELECT
+n => row_Green~1.OUTPUTSELECT
+n => row_Green~0.OUTPUTSELECT
+n => col_Green~98.OUTPUTSELECT
+n => col_Green~97.OUTPUTSELECT
+n => col_Green~96.OUTPUTSELECT
+n => col_Green~95.OUTPUTSELECT
+n => col_Green~94.OUTPUTSELECT
+n => col_Green~93.OUTPUTSELECT
+n => col_Green~92.OUTPUTSELECT
+n => col_Green~91.OUTPUTSELECT
+n => col_Red~100.OUTPUTSELECT
+n => col_Red~99.OUTPUTSELECT
+n => col_Red~98.OUTPUTSELECT
+n => col_Red~97.OUTPUTSELECT
+n => col_Red~96.OUTPUTSELECT
+n => col_Red~95.OUTPUTSELECT
+n => col_Red~94.OUTPUTSELECT
+n => col_Red~93.OUTPUTSELECT
+y => row_Green~47.OUTPUTSELECT
+y => row_Green~46.OUTPUTSELECT
+y => row_Green~45.OUTPUTSELECT
+y => row_Green~44.OUTPUTSELECT
+y => row_Green~43.OUTPUTSELECT
+y => row_Green~42.OUTPUTSELECT
+y => row_Green~41.OUTPUTSELECT
+y => row_Green~40.OUTPUTSELECT
+y => col_Green~167.OUTPUTSELECT
+y => col_Green~166.OUTPUTSELECT
+y => col_Green~165.OUTPUTSELECT
+y => col_Green~164.OUTPUTSELECT
+y => col_Green~163.OUTPUTSELECT
+y => col_Green~162.OUTPUTSELECT
+y => col_Green~161.OUTPUTSELECT
+y => col_Green~160.OUTPUTSELECT
+y => col_Red~173.OUTPUTSELECT
+y => col_Red~172.OUTPUTSELECT
+y => col_Red~171.OUTPUTSELECT
+y => col_Red~170.OUTPUTSELECT
+y => col_Red~169.OUTPUTSELECT
+y => col_Red~168.OUTPUTSELECT
+y => col_Red~167.OUTPUTSELECT
+y => col_Red~166.OUTPUTSELECT
+y => col_Red~136.OUTPUTSELECT
+y => col_Red~61.OUTPUTSELECT
+y => col_Red~219.OUTPUTSELECT
+y => col_Red~234.OUTPUTSELECT
+y => col_Red~250.OUTPUTSELECT
+y => col_Red~266.OUTPUTSELECT
+y => col_Red~277.OUTPUTSELECT
+y => col_Red~288.OUTPUTSELECT
+y => col_Green~213.OUTPUTSELECT
+y => col_Green~224.OUTPUTSELECT
+y => col_Green~235.OUTPUTSELECT
+y => col_Green~246.OUTPUTSELECT
+y => col_Green~257.OUTPUTSELECT
+y => col_Green~268.OUTPUTSELECT
+y => col_Green~279.OUTPUTSELECT
+y => col_Green~290.OUTPUTSELECT
+y => row_Green~93.OUTPUTSELECT
+y => row_Green~103.OUTPUTSELECT
+y => row_Green~113.OUTPUTSELECT
+y => row_Green~123.OUTPUTSELECT
+y => row_Green~133.OUTPUTSELECT
+y => row_Green~143.OUTPUTSELECT
+y => row_Green~153.OUTPUTSELECT
+y => row_Green~163.OUTPUTSELECT
+y => row_Green~159.OUTPUTSELECT
+y => row_Green~149.OUTPUTSELECT
+y => row_Green~139.OUTPUTSELECT
+y => row_Green~129.OUTPUTSELECT
+y => row_Green~119.OUTPUTSELECT
+y => row_Green~109.OUTPUTSELECT
+y => row_Green~99.OUTPUTSELECT
+y => row_Green~89.OUTPUTSELECT
+y => col_Green~286.OUTPUTSELECT
+y => col_Green~275.OUTPUTSELECT
+y => col_Green~264.OUTPUTSELECT
+y => col_Green~253.OUTPUTSELECT
+y => col_Green~242.OUTPUTSELECT
+y => col_Green~231.OUTPUTSELECT
+y => col_Green~220.OUTPUTSELECT
+y => col_Green~209.OUTPUTSELECT
+y => col_Red~284.OUTPUTSELECT
+y => col_Red~273.OUTPUTSELECT
+y => col_Red~257.OUTPUTSELECT
+y => col_Red~241.OUTPUTSELECT
+y => col_Red~226.OUTPUTSELECT
+y => col_Red~22.OUTPUTSELECT
+y => col_Red~65.OUTPUTSELECT
+y => col_Red~217.OUTPUTSELECT
+b => row_Green~164.OUTPUTSELECT
+b => row_Green~160.OUTPUTSELECT
+b => row_Green~154.OUTPUTSELECT
+b => row_Green~150.OUTPUTSELECT
+b => row_Green~144.OUTPUTSELECT
+b => row_Green~140.OUTPUTSELECT
+b => row_Green~134.OUTPUTSELECT
+b => row_Green~130.OUTPUTSELECT
+b => row_Green~124.OUTPUTSELECT
+b => row_Green~120.OUTPUTSELECT
+b => row_Green~114.OUTPUTSELECT
+b => row_Green~110.OUTPUTSELECT
+b => row_Green~104.OUTPUTSELECT
+b => row_Green~100.OUTPUTSELECT
+b => row_Green~94.OUTPUTSELECT
+b => row_Green~90.OUTPUTSELECT
+b => col_Green~291.OUTPUTSELECT
+b => col_Green~287.OUTPUTSELECT
+b => col_Green~280.OUTPUTSELECT
+b => col_Green~276.OUTPUTSELECT
+b => col_Green~269.OUTPUTSELECT
+b => col_Green~265.OUTPUTSELECT
+b => col_Green~258.OUTPUTSELECT
+b => col_Green~254.OUTPUTSELECT
+b => col_Green~247.OUTPUTSELECT
+b => col_Green~243.OUTPUTSELECT
+b => col_Green~236.OUTPUTSELECT
+b => col_Green~232.OUTPUTSELECT
+b => col_Green~225.OUTPUTSELECT
+b => col_Green~221.OUTPUTSELECT
+b => col_Green~214.OUTPUTSELECT
+b => col_Green~210.OUTPUTSELECT
+b => col_Red~289.OUTPUTSELECT
+b => col_Red~285.OUTPUTSELECT
+b => col_Red~278.OUTPUTSELECT
+b => col_Red~274.OUTPUTSELECT
+b => col_Red~267.OUTPUTSELECT
+b => col_Red~258.OUTPUTSELECT
+b => col_Red~251.OUTPUTSELECT
+b => col_Red~242.OUTPUTSELECT
+b => col_Red~235.OUTPUTSELECT
+b => col_Red~227.OUTPUTSELECT
+b => col_Red~220.OUTPUTSELECT
+b => col_Red~21.OUTPUTSELECT
+b => col_Red~60.OUTPUTSELECT
+b => col_Red~64.OUTPUTSELECT
+b => col_Red~135.OUTPUTSELECT
+b => col_Red~216.OUTPUTSELECT
+b => col_Red~68.OUTPUTSELECT
+b => col_Red~25.OUTPUTSELECT
+b => col_Red~223.OUTPUTSELECT
+b => col_Red~238.OUTPUTSELECT
+b => col_Red~254.OUTPUTSELECT
+b => col_Red~270.OUTPUTSELECT
+b => col_Red~281.OUTPUTSELECT
+b => col_Red~292.OUTPUTSELECT
+b => col_Green~217.OUTPUTSELECT
+b => col_Green~228.OUTPUTSELECT
+b => col_Green~239.OUTPUTSELECT
+b => col_Green~250.OUTPUTSELECT
+b => col_Green~261.OUTPUTSELECT
+b => col_Green~272.OUTPUTSELECT
+b => col_Green~283.OUTPUTSELECT
+b => col_Green~294.OUTPUTSELECT
+b => col_Red~102.OUTPUTSELECT
+b => col_Red~27.OUTPUTSELECT
+b => col_Red~221.OUTPUTSELECT
+b => col_Red~236.OUTPUTSELECT
+b => col_Red~252.OUTPUTSELECT
+b => col_Red~268.OUTPUTSELECT
+b => col_Red~279.OUTPUTSELECT
+b => col_Red~290.OUTPUTSELECT
+b => col_Green~215.OUTPUTSELECT
+b => col_Green~226.OUTPUTSELECT
+b => col_Green~237.OUTPUTSELECT
+b => col_Green~248.OUTPUTSELECT
+b => col_Green~259.OUTPUTSELECT
+b => col_Green~270.OUTPUTSELECT
+b => col_Green~281.OUTPUTSELECT
+b => col_Green~292.OUTPUTSELECT
+b => row_Green~95.OUTPUTSELECT
+b => row_Green~105.OUTPUTSELECT
+b => row_Green~115.OUTPUTSELECT
+b => row_Green~125.OUTPUTSELECT
+b => row_Green~135.OUTPUTSELECT
+b => row_Green~145.OUTPUTSELECT
+b => row_Green~155.OUTPUTSELECT
+b => row_Green~165.OUTPUTSELECT
+b => row_Green~161.OUTPUTSELECT
+b => row_Green~151.OUTPUTSELECT
+b => row_Green~141.OUTPUTSELECT
+b => row_Green~131.OUTPUTSELECT
+b => row_Green~121.OUTPUTSELECT
+b => row_Green~111.OUTPUTSELECT
+b => row_Green~101.OUTPUTSELECT
+b => row_Green~91.OUTPUTSELECT
+b => col_Green~288.OUTPUTSELECT
+b => col_Green~277.OUTPUTSELECT
+b => col_Green~266.OUTPUTSELECT
+b => col_Green~255.OUTPUTSELECT
+b => col_Green~244.OUTPUTSELECT
+b => col_Green~233.OUTPUTSELECT
+b => col_Green~222.OUTPUTSELECT
+b => col_Green~211.OUTPUTSELECT
+b => col_Red~286.OUTPUTSELECT
+b => col_Red~275.OUTPUTSELECT
+b => col_Red~259.OUTPUTSELECT
+b => col_Red~243.OUTPUTSELECT
+b => col_Red~228.OUTPUTSELECT
+b => col_Red~20.OUTPUTSELECT
+b => col_Red~63.OUTPUTSELECT
+b => col_Red~215.OUTPUTSELECT
+m3 => row_Green~162.OUTPUTSELECT
+m3 => row_Green~152.OUTPUTSELECT
+m3 => row_Green~142.OUTPUTSELECT
+m3 => row_Green~132.OUTPUTSELECT
+m3 => row_Green~122.OUTPUTSELECT
+m3 => row_Green~112.OUTPUTSELECT
+m3 => row_Green~102.OUTPUTSELECT
+m3 => row_Green~92.OUTPUTSELECT
+m3 => col_Green~289.OUTPUTSELECT
+m3 => col_Green~278.OUTPUTSELECT
+m3 => col_Green~267.OUTPUTSELECT
+m3 => col_Green~256.OUTPUTSELECT
+m3 => col_Green~245.OUTPUTSELECT
+m3 => col_Green~234.OUTPUTSELECT
+m3 => col_Green~223.OUTPUTSELECT
+m3 => col_Green~212.OUTPUTSELECT
+m3 => col_Red~287.OUTPUTSELECT
+m3 => col_Red~276.OUTPUTSELECT
+m3 => col_Red~260.OUTPUTSELECT
+m3 => col_Red~244.OUTPUTSELECT
+m3 => col_Red~229.OUTPUTSELECT
+m3 => col_Red~3.OUTPUTSELECT
+m3 => col_Red~62.OUTPUTSELECT
+m3 => col_Red~174.OUTPUTSELECT
+m2 => row_Green~166.OUTPUTSELECT
+m2 => row_Green~156.OUTPUTSELECT
+m2 => row_Green~146.OUTPUTSELECT
+m2 => row_Green~136.OUTPUTSELECT
+m2 => row_Green~126.OUTPUTSELECT
+m2 => row_Green~116.OUTPUTSELECT
+m2 => row_Green~106.OUTPUTSELECT
+m2 => row_Green~96.OUTPUTSELECT
+m2 => col_Green~293.OUTPUTSELECT
+m2 => col_Green~282.OUTPUTSELECT
+m2 => col_Green~271.OUTPUTSELECT
+m2 => col_Green~260.OUTPUTSELECT
+m2 => col_Green~249.OUTPUTSELECT
+m2 => col_Green~238.OUTPUTSELECT
+m2 => col_Green~227.OUTPUTSELECT
+m2 => col_Green~216.OUTPUTSELECT
+m2 => col_Red~291.OUTPUTSELECT
+m2 => col_Red~280.OUTPUTSELECT
+m2 => col_Red~269.OUTPUTSELECT
+m2 => col_Red~253.OUTPUTSELECT
+m2 => col_Red~237.OUTPUTSELECT
+m2 => col_Red~222.OUTPUTSELECT
+m2 => col_Red~26.OUTPUTSELECT
+m2 => col_Red~101.OUTPUTSELECT
+m1 => row_Green~167.OUTPUTSELECT
+m1 => row_Green~157.OUTPUTSELECT
+m1 => row_Green~147.OUTPUTSELECT
+m1 => row_Green~137.OUTPUTSELECT
+m1 => row_Green~127.OUTPUTSELECT
+m1 => row_Green~117.OUTPUTSELECT
+m1 => row_Green~107.OUTPUTSELECT
+m1 => row_Green~97.OUTPUTSELECT
+m1 => col_Green~295.OUTPUTSELECT
+m1 => col_Green~284.OUTPUTSELECT
+m1 => col_Green~273.OUTPUTSELECT
+m1 => col_Green~262.OUTPUTSELECT
+m1 => col_Green~251.OUTPUTSELECT
+m1 => col_Green~240.OUTPUTSELECT
+m1 => col_Green~229.OUTPUTSELECT
+m1 => col_Green~218.OUTPUTSELECT
+m1 => col_Red~293.OUTPUTSELECT
+m1 => col_Red~282.OUTPUTSELECT
+m1 => col_Red~271.OUTPUTSELECT
+m1 => col_Red~255.OUTPUTSELECT
+m1 => col_Red~239.OUTPUTSELECT
+m1 => col_Red~224.OUTPUTSELECT
+m1 => col_Red~24.OUTPUTSELECT
+m1 => col_Red~67.OUTPUTSELECT
+clear => row_Green~87.OUTPUTSELECT
+clear => row_Green~86.OUTPUTSELECT
+clear => row_Green~85.OUTPUTSELECT
+clear => row_Green~84.OUTPUTSELECT
+clear => row_Green~83.OUTPUTSELECT
+clear => row_Green~82.OUTPUTSELECT
+clear => row_Green~81.OUTPUTSELECT
+clear => row_Green~80.OUTPUTSELECT
+clear => col_Green~207.OUTPUTSELECT
+clear => col_Green~206.OUTPUTSELECT
+clear => col_Green~205.OUTPUTSELECT
+clear => col_Green~204.OUTPUTSELECT
+clear => col_Green~203.OUTPUTSELECT
+clear => col_Green~202.OUTPUTSELECT
+clear => col_Green~201.OUTPUTSELECT
+clear => col_Green~200.OUTPUTSELECT
+clear => col_Red~214.OUTPUTSELECT
+clear => col_Red~213.OUTPUTSELECT
+clear => col_Red~212.OUTPUTSELECT
+clear => col_Red~211.OUTPUTSELECT
+clear => col_Red~210.OUTPUTSELECT
+clear => col_Red~209.OUTPUTSELECT
+clear => col_Red~208.OUTPUTSELECT
+clear => col_Red~207.OUTPUTSELECT
+x[0] => Equal3.IN3
+x[0] => Equal2.IN3
+x[0] => Equal1.IN3
+x[0] => Equal0.IN3
+x[1] => Equal3.IN2
+x[1] => Equal2.IN2
+x[1] => Equal1.IN2
+x[1] => Equal0.IN2
+col_Green[7] <= col_Green[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+col_Green[6] <= col_Green[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+col_Green[5] <= col_Green[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+col_Green[4] <= col_Green[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+col_Green[3] <= col_Green[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+col_Green[2] <= col_Green[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+col_Green[1] <= col_Green[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+col_Green[0] <= col_Green[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+row_Green[7] <= row_Green[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+row_Green[6] <= row_Green[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+row_Green[5] <= row_Green[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+row_Green[4] <= row_Green[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+row_Green[3] <= row_Green[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+row_Green[2] <= row_Green[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+row_Green[1] <= row_Green[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+row_Green[0] <= row_Green[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+col_Red[7] <= col_Red[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+col_Red[6] <= col_Red[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+col_Red[5] <= col_Red[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+col_Red[4] <= col_Red[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+col_Red[3] <= col_Red[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+col_Red[2] <= col_Red[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+col_Red[1] <= col_Red[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+col_Red[0] <= col_Red[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+row_Red[7] <= <GND>
+row_Red[6] <= <GND>
+row_Red[5] <= <GND>
+row_Red[4] <= <GND>
+row_Red[3] <= <GND>
+row_Red[2] <= <GND>
+row_Red[1] <= <GND>
+row_Red[0] <= <GND>
+
+
+|8X8|scanf_gen:inst1
+clockin => counter[6].CLK
+clockin => counter[5].CLK
+clockin => counter[4].CLK
+clockin => counter[3].CLK
+clockin => counter[2].CLK
+clockin => counter[1].CLK
+clockin => counter[0].CLK
+clockin => PULSE.CLK
+clockout <= PULSE.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|8X8|loopcountingg:inst2
+CLK => present_state[1].CLK
+CLK => present_state[0].CLK
+op[0] <= present_state[0].DB_MAX_OUTPUT_PORT_TYPE
+op[1] <= present_state[1].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|8X8|clk_gen:inst3
+1KHz <= div10_t:inst3.CLK_out
+clock => div10_t:inst.CLK
+100Hz <= div10_t:inst4.CLK_out
+10Hz <= div10_t:inst5.CLK_out
+1Hz <= div10_t:inst6.CLK_out
+
+
+|8X8|clk_gen:inst3|div10_t:inst3
+CLK_out <= 2.DB_MAX_OUTPUT_PORT_TYPE
+CLK => 5.CLK
+CLK => 3.CLK
+CLK => 1.CLK
+CLK => 2.CLK
+
+
+|8X8|clk_gen:inst3|div10_t:inst2
+CLK_out <= 2.DB_MAX_OUTPUT_PORT_TYPE
+CLK => 5.CLK
+CLK => 3.CLK
+CLK => 1.CLK
+CLK => 2.CLK
+
+
+|8X8|clk_gen:inst3|div10_t:inst1
+CLK_out <= 2.DB_MAX_OUTPUT_PORT_TYPE
+CLK => 5.CLK
+CLK => 3.CLK
+CLK => 1.CLK
+CLK => 2.CLK
+
+
+|8X8|clk_gen:inst3|div10_t:inst
+CLK_out <= 2.DB_MAX_OUTPUT_PORT_TYPE
+CLK => 5.CLK
+CLK => 3.CLK
+CLK => 1.CLK
+CLK => 2.CLK
+
+
+|8X8|clk_gen:inst3|div10_t:inst4
+CLK_out <= 2.DB_MAX_OUTPUT_PORT_TYPE
+CLK => 5.CLK
+CLK => 3.CLK
+CLK => 1.CLK
+CLK => 2.CLK
+
+
+|8X8|clk_gen:inst3|div10_t:inst5
+CLK_out <= 2.DB_MAX_OUTPUT_PORT_TYPE
+CLK => 5.CLK
+CLK => 3.CLK
+CLK => 1.CLK
+CLK => 2.CLK
+
+
+|8X8|clk_gen:inst3|div10_t:inst6
+CLK_out <= 2.DB_MAX_OUTPUT_PORT_TYPE
+CLK => 5.CLK
+CLK => 3.CLK
+CLK => 1.CLK
+CLK => 2.CLK
+
+
+|8X8|VHDL09:inst8
+X[0] => Mux6.IN19
+X[0] => Mux5.IN19
+X[0] => Mux4.IN19
+X[0] => Mux3.IN19
+X[0] => Mux2.IN19
+X[0] => Mux1.IN19
+X[0] => Mux0.IN19
+X[1] => Mux6.IN18
+X[1] => Mux5.IN18
+X[1] => Mux4.IN18
+X[1] => Mux3.IN18
+X[1] => Mux2.IN18
+X[1] => Mux1.IN18
+X[1] => Mux0.IN18
+X[2] => Mux6.IN17
+X[2] => Mux5.IN17
+X[2] => Mux4.IN17
+X[2] => Mux3.IN17
+X[2] => Mux2.IN17
+X[2] => Mux1.IN17
+X[2] => Mux0.IN17
+X[3] => Mux6.IN16
+X[3] => Mux5.IN16
+X[3] => Mux4.IN16
+X[3] => Mux3.IN16
+X[3] => Mux2.IN16
+X[3] => Mux1.IN16
+X[3] => Mux0.IN16
+Y[0] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+Y[1] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+Y[2] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+Y[3] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+Y[4] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+Y[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+Y[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|8X8|scorecount:inst5
+CLK => present_state[3].CLK
+CLK => present_state[2].CLK
+CLK => present_state[1].CLK
+CLK => present_state[0].CLK
+x => present_state[3].ACLR
+x => present_state[2].ACLR
+x => present_state[1].ACLR
+x => present_state[0].ACLR
+cop[0] <= present_state[0].DB_MAX_OUTPUT_PORT_TYPE
+cop[1] <= present_state[1].DB_MAX_OUTPUT_PORT_TYPE
+cop[2] <= present_state[2].DB_MAX_OUTPUT_PORT_TYPE
+cop[3] <= present_state[3].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|8X8|debounce_g:inst6
+Key_out <= 16.DB_MAX_OUTPUT_PORT_TYPE
+CLK => 1.CLK
+CLK => 2.CLK
+Key_in => 1.DATAIN
+
+
+|8X8|debounce_g:inst7
+Key_out <= 16.DB_MAX_OUTPUT_PORT_TYPE
+CLK => 1.CLK
+CLK => 2.CLK
+Key_in => 1.DATAIN
+
+
